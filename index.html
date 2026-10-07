@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Веб Академи — Хичээлийн портал</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+
+<!-- HEADER: Flexbox -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">W</span>
+      <div>
+        <h1 class="brand-name">Веб Академи</h1>
+        <p class="brand-tagline">Хичээл, даалгавар, дүнгийн нэг портал</p>
+      </div>
+    </div>
+    <a class="btn" href="#burtgel">Бүртгүүлэх</a>
+  </div>
+</header>
+
+<!-- NAVIGATION: Flexbox -->
+<nav class="site-nav" aria-label="Үндсэн цэс">
+  <ul class="nav-list">
+    <li><a class="nav-link is-active" href="#hicheel">Хичээлүүд</a></li>
+    <li><a class="nav-link" href="#medee">Мэдээ</a></li>
+    <li><a class="nav-link" href="#dun">Дүн</a></li>
+    <li class="nav-spacer"><a class="nav-link" href="#holboo">Холбоо барих</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE: Grid (main + sidebar) -->
+<div class="page">
+
+  <main class="content">
+    <h2 class="section-title" id="hicheel">Энэ улирлын хичээлүүд</h2>
+
+    <!-- CARD GRID: 3 багана -->
+    <div class="card-grid">
+
+      <article class="card card-featured">
+        <span class="tag">Шинэ</span>
+        <h3 class="card-title">Веб программчлал</h3>
+        <p class="card-text">HTML, CSS, JavaScript-ийн үндэс. Семантик бүтэц, форм, загварчлал, layout-ыг лабораторийн ажлаар хамруулна.</p>
+        <footer class="card-meta"><span>12 лаб</span><span>3 кредит</span></footer>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Өгөгдлийн сан</h3>
+        <p class="card-text">Хүснэгт, хамаарал, SQL асуулга.</p>
+        <footer class="card-meta"><span>10 лаб</span><span>3 кредит</span></footer>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Алгоритм ба бүтэц</h3>
+        <p class="card-text">Жагсаалт, мод, граф, эрэмбэлэлт.</p>
+        <footer class="card-meta"><span>12 лаб</span><span>3 кредит</span></footer>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Сүлжээний үндэс</h3>
+        <p class="card-text">TCP/IP, HTTP, DNS-ийн ажиллагаа.</p>
+        <footer class="card-meta"><span>8 лаб</span><span>2 кредит</span></footer>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Програм хангамжийн инженерчлэл</h3>
+        <p class="card-text">Шаардлага, загварчлал, багийн ажил.</p>
+        <footer class="card-meta"><span>6 лаб</span><span>3 кредит</span></footer>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Хэрэглэгчийн интерфэйс</h3>
+        <p class="card-text">Өнгө, фонт, зай, хандалтын зарчим.</p>
+        <footer class="card-meta"><span>8 лаб</span><span>2 кредит</span></footer>
+      </article>
+
+    </div>
+  </main>
+
+  <aside class="sidebar" aria-label="Нэмэлт мэдээлэл">
+    <section class="widget" id="medee">
+      <h2 class="widget-title">Сүүлийн мэдээ</h2>
+      <ul class="widget-list">
+        <li><a href="#">Лаб 4-ийн хугацаа 10-р сарын 15</a></li>
+        <li><a href="#">Дунд шалгалтын хуваарь гарлаа</a></li>
+        <li><a href="#">Шинэ сурах бичиг нэмэгдлээ</a></li>
+      </ul>
+    </section>
+
+    <section class="widget" id="dun">
+      <h2 class="widget-title">Миний дүн</h2>
+      <ul class="widget-list">
+        <li class="grade-row"><span>Веб программчлал</span><strong>92</strong></li>
+        <li class="grade-row"><span>Өгөгдлийн сан</span><strong>93</strong></li>
+        <li class="grade-row"><span>Алгоритм ба бүтэц</span><strong>98</strong></li>
+      </ul>
+    </section>
+  </aside>
+
+</div>
+
+<!-- FOOTER: Grid -->
+<footer class="site-footer" id="holboo">
+  <div class="footer-inner">
+    <section>
+      <h2 class="footer-title">Веб Академи</h2>
+      <p>Лабораторийн ажлын жишиг портал.</p>
+    </section>
+    <section>
+      <h2
